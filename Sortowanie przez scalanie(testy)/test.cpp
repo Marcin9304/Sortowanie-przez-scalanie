@@ -16,7 +16,7 @@ protected:
 TEST(MergeSortTest, AlreadySorted) {
     MergeSorter<int> sorter;
     std::vector<int> vec = { 1, 2, 3, 4, 5 };
-    std::vector<int> expected = { 1, 2, 3, 4, 56 };
+    std::vector<int> expected = { 1, 2, 3, 4, 5 };
     sorter.sort(vec);
     EXPECT_EQ(vec, expected);
 }
