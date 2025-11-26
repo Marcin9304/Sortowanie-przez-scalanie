@@ -6,24 +6,24 @@
 
 /**
  * @brief Klasa szablonowa implementuj¹ca algorytm sortowania przez scalanie (Merge Sort).
- * * @tparam T Typ danych przechowywanych w tablicy (musi wspieraæ operatory porównania).
+ * * @tparam T Typ danych przechowywanych w tablicy (musi wspierac operatory porownania).
  */
 template <typename T>
 class MergeSorter {
 public:
     /**
-     * @brief Domyœlny konstruktor.
+     * @brief Domyslny konstruktor.
      */
     MergeSorter() = default;
 
     /**
-     * @brief Domyœlny destruktor.
+     * @brief Domyslny destruktor.
      */
     ~MergeSorter() = default;
 
     /**
-     * @brief G³ówna metoda sortuj¹ca.
-     * * @param arr Referencja do wektora, który ma zostaæ posortowany.
+     * @brief G³owna metoda sortujaca.
+     * * @param arr Referencja do wektora, ktory ma zostac posortowany.
      */
     void sort(std::vector<T>& arr) {
         if (arr.size() <= 1) return;
@@ -32,10 +32,10 @@ public:
 
 private:
     /**
-     * @brief Rekurencyjna funkcja dziel¹ca tablicê na podproblemy.
+     * @brief Rekurencyjna funkcja dzielaca tablicê na podproblemy.
      * * @param arr Tablica do posortowania.
-     * @param left Indeks lewego koñca zakresu.
-     * @param right Indeks prawego koñca zakresu.
+     * @param left Indeks lewego konca zakresu.
+     * @param right Indeks prawego konca zakresu.
      */
     void mergeSort(std::vector<T>& arr, int left, int right) {
         if (left < right) {
@@ -49,9 +49,9 @@ private:
     }
 
     /**
-     * @brief Funkcja scalaj¹ca dwie posortowane podtablice.
-     * * @param arr Tablica, na której operujemy.
-     * @param left Pocz¹tek lewej podtablicy.
+     * @brief Funkcja scalajaca dwie posortowane podtablice.
+     * * @param arr Tablica, na ktorej operujemy.
+     * @param left Poczatek lewej podtablicy.
      * @param mid Koniec lewej podtablicy.
      * @param right Koniec prawej podtablicy.
      */

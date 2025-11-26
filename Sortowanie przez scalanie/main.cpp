@@ -1,8 +1,24 @@
+/**
+ * @file main.cpp
+ * @brief G³ówny plik programu demonstruj¹cy dzia³anie algorytmu MergeSort.
+ * @author Twoje Imie i Nazwisko
+ * @date 2023-11-26
+ *
+ * Plik zawiera funkcjê g³ówn¹, która tworzy instancje szablonu klasy MergeSorter
+ * dla typów int oraz double, a nastêpnie prezentuje wyniki sortowania na standardowym wyjœciu.
+ */
+
 #include <iostream>
 #include <vector>
 #include "MergeSorter.h"
 
-// Funkcja pomocnicza do wyœwietlania wektora
+ /**
+  * @brief Funkcja pomocnicza do wyœwietlania zawartoœci wektora w konsoli.
+  * * Funkcja przechodzi przez wszystkie elementy wektora i wypisuje je
+  * oddzielone spacj¹.
+  * * @tparam T Typ danych przechowywanych w wektorze.
+  * @param vec Referencja do sta³ego wektora, który ma zostaæ wyœwietlony.
+  */
 template <typename T>
 void printVector(const std::vector<T>& vec) {
     for (const auto& val : vec) {
@@ -11,6 +27,15 @@ void printVector(const std::vector<T>& vec) {
     std::cout << std::endl;
 }
 
+/**
+ * @brief G³ówna funkcja wejœciowa programu.
+ * * W tej funkcji realizowane s¹ nastêpuj¹ce kroki:
+ * 1. Utworzenie instancji MergeSorter dla liczb ca³kowitych (int).
+ * 2. Posortowanie i wyœwietlenie przyk³adowej tablicy int.
+ * 3. Utworzenie instancji MergeSorter dla liczb zmiennoprzecinkowych (double).
+ * 4. Posortowanie i wyœwietlenie przyk³adowej tablicy double.
+ * * @return Zwraca 0, informuj¹c system operacyjny o poprawnym zakoñczeniu programu.
+ */
 int main() {
     std::cout << "=== Demonstracja MergeSort ===\n" << std::endl;
 

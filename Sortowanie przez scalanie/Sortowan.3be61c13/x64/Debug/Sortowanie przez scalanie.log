@@ -1,0 +1,17 @@
+﻿  main.cpp
+C:\Users\marci\OneDrive\Pulpit\Sortowanie przez scalanie\Sortowanie przez scalanie\MergeSorter.h(30,38): warning C4267: "argument": konwersja z "size_t" do "int", możliwa utrata danych
+  (kompilowanie pliku źródłowego „main.cpp”)
+      C:\Users\marci\OneDrive\Pulpit\Sortowanie przez scalanie\Sortowanie przez scalanie\MergeSorter.h(30,38):
+      kontekst tworzenia wystąpienia szablonu (najpierw najstarszy) to
+          C:\Users\marci\OneDrive\Pulpit\Sortowanie przez scalanie\Sortowanie przez scalanie\main.cpp(56,25):
+          zobacz odwołanie do kompilowanego tworzenia wystąpienia „MergeSorter<double>” klasy klasa szablon
+          C:\Users\marci\OneDrive\Pulpit\Sortowanie przez scalanie\Sortowanie przez scalanie\MergeSorter.h(28,10):
+          podczas kompilowania funkcji składowej „void MergeSorter<double>::sort(std::vector<T,std::allocator<T>> &)” klasy klasa szablon
+          with
+          [
+              T=double
+          ]
+              C:\Users\marci\OneDrive\Pulpit\Sortowanie przez scalanie\Sortowanie przez scalanie\main.cpp(62,22):
+              zobacz pierwsze odwołanie do elementu „MergeSorter<double>::sort” w „main”
+  
+  Sortowanie przez scalanie.vcxproj -> C:\Users\marci\OneDrive\Pulpit\Sortowanie przez scalanie\Sortowanie przez scalanie\x64\Debug\Sortowanie przez scalanie.exe

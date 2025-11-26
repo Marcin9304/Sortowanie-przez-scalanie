@@ -1,18 +1,18 @@
 #include "pch.h"
 #include "gtest/gtest.h"
-#include "MergeSorter.h" // Pamiêtaj o poprawnej œcie¿ce do nag³ówka!
+#include "MergeSorter.h" 
 #include <vector>
 #include <algorithm> // do std::is_sorted
 #include <random>    // do generowania losowych liczb
 
-// Klasa testowa (Fixture) - opcjonalna, ale porz¹dkuje kod
+// Klasa testowa (Fixture) - opcjonalna, ale porzadkuje kod
 template <typename T>
 class MergeSorterTest : public ::testing::Test {
 protected:
     MergeSorter<T> sorter;
 };
 
-// 1. Zachowuje tablicê niezmienion¹, gdy jest ju¿ posortowana rosn¹co
+// 1. Zachowuje tablice niezmieniona, gdy jest juz posortowana rosnaco
 TEST(MergeSortTest, AlreadySorted) {
     MergeSorter<int> sorter;
     std::vector<int> vec = { 1, 2, 3, 4, 5 };
@@ -21,7 +21,7 @@ TEST(MergeSortTest, AlreadySorted) {
     EXPECT_EQ(vec, expected);
 }
 
-// 2. Potrafi posortowaæ tablicê posortowan¹ w odwrotnej kolejnoœci
+// 2. Potrafi posortowac tablice posortowana w odwrotnej kolejnosci
 TEST(MergeSortTest, ReverseSorted) {
     MergeSorter<int> sorter;
     std::vector<int> vec = { 5, 4, 3, 2, 1 };
@@ -30,12 +30,12 @@ TEST(MergeSortTest, ReverseSorted) {
     EXPECT_EQ(vec, expected);
 }
 
-// 3. Poprawnie sortuje losow¹ tablicê liczb
+// 3. Poprawnie sortuje losowa tablice liczb
 TEST(MergeSortTest, RandomArray) {
     MergeSorter<int> sorter;
     std::vector<int> vec = { 42, 15, 8, 23, 4, 16 };
     sorter.sort(vec);
-    // Sprawdzamy za pomoc¹ funkcji z biblioteki standardowej
+    // Sprawdzamy za pomoca funkcji z biblioteki standardowej
     EXPECT_TRUE(std::is_sorted(vec.begin(), vec.end()));
 }
 
@@ -57,7 +57,7 @@ TEST(MergeSortTest, MixedNegativeAndPositive) {
     EXPECT_EQ(vec, expected);
 }
 
-// 6. Obs³uguje pust¹ tablicê bez rzucania wyj¹tkiem
+// 6. Obs³uguje pusta tablice bez rzucania wyjatkiem
 TEST(MergeSortTest, EmptyArray) {
     MergeSorter<int> sorter;
     std::vector<int> vec = {};
@@ -65,7 +65,7 @@ TEST(MergeSortTest, EmptyArray) {
     EXPECT_TRUE(vec.empty());
 }
 
-// 7. Nie zmienia tablicy, która zawiera tylko jeden element
+// 7. Nie zmienia tablicy, ktora zawiera tylko jeden element
 TEST(MergeSortTest, SingleElement) {
     MergeSorter<int> sorter;
     std::vector<int> vec = { 42 };
@@ -74,7 +74,7 @@ TEST(MergeSortTest, SingleElement) {
     EXPECT_EQ(vec, expected);
 }
 
-// 8. Poprawnie sortuje tablicê z duplikatami liczb
+// 8. Poprawnie sortuje tablice z duplikatami liczb
 TEST(MergeSortTest, Duplicates) {
     MergeSorter<int> sorter;
     std::vector<int> vec = { 5, 1, 5, 2, 1 };
@@ -83,7 +83,7 @@ TEST(MergeSortTest, Duplicates) {
     EXPECT_EQ(vec, expected);
 }
 
-// 9. Poprawnie sortuje tablice ujemn¹ z duplikatami
+// 9. Poprawnie sortuje tablice ujemna z duplikatami
 TEST(MergeSortTest, NegativeDuplicates) {
     MergeSorter<int> sorter;
     std::vector<int> vec = { -5, -1, -5, -2, -1 };
@@ -101,7 +101,7 @@ TEST(MergeSortTest, MixedDuplicates) {
     EXPECT_EQ(vec, expected);
 }
 
-// 11. Poprawnie sortuje tablicê zawieraj¹c¹ tylko dwa elementy w kolejnoœci rosn¹cej
+// 11. Poprawnie sortuje tablice zawieraj¹ca tylko dwa elementy w kolejnosci rosnacej
 TEST(MergeSortTest, TwoElementsSorted) {
     MergeSorter<int> sorter;
     std::vector<int> vec = { 1, 10 };
@@ -110,7 +110,7 @@ TEST(MergeSortTest, TwoElementsSorted) {
     EXPECT_EQ(vec, expected);
 }
 
-// 12. Poprawnie sortuje du¿¹ tablicê zawieraj¹c¹ ponad 100 elementów
+// 12. Poprawnie sortuje duza tablice zawieraj¹ca ponad 100 elementow
 TEST(MergeSortTest, LargeArray) {
     MergeSorter<int> sorter;
     std::vector<int> vec(150);
@@ -123,12 +123,12 @@ TEST(MergeSortTest, LargeArray) {
     EXPECT_EQ(vec.size(), 150);
 }
 
-// 13. Poprawnie sortuje du¿¹ tablicê (100+) z ujemnymi, dodatnimi i duplikatami
+// 13. Poprawnie sortuje duza tablice (100+) z ujemnymi, dodatnimi i duplikatami
 TEST(MergeSortTest, LargeComplexArray) {
     MergeSorter<int> sorter;
     std::vector<int> vec;
     // Generujemy losowe dane
-    std::mt19937 rng(42); // sta³e ziarno dla powtarzalnoœci
+    std::mt19937 rng(42); // stale ziarno dla powtarzalnosci
     std::uniform_int_distribution<int> dist(-50, 50);
 
     for (int i = 0; i < 150; ++i) {
@@ -140,7 +140,7 @@ TEST(MergeSortTest, LargeComplexArray) {
     EXPECT_EQ(vec.size(), 150);
 }
 
-// Testy dla typu double (dodatkowo, aby sprawdziæ dzia³anie szablonu)
+// Testy dla typu double (dodatkowo, aby sprawdzic dzialanie szablonu)
 TEST(MergeSortTest, DoubleType) {
     MergeSorter<double> sorter;
     std::vector<double> vec = { 3.5, -1.1, 3.5, 0.0 };

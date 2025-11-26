@@ -3,6 +3,13 @@
   "WorkspaceRootPath": "C:\\Users\\marci\\OneDrive\\Pulpit\\Sortowanie przez scalanie\\Sortowanie przez scalanie\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{9508787A-DFD6-4F11-A9D8-40C0F6D6F0E3}|..\\Sortowanie przez scalanie(testy)\\Sortowanie przez scalanie(testy).vcxproj|C:\\Users\\marci\\OneDrive\\Pulpit\\Sortowanie przez scalanie\\Sortowanie przez scalanie(testy)\\test.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3BE61C13-3B2D-4BEF-B392-54CC7CDB3F5B}|Sortowanie przez scalanie.vcxproj|C:\\Users\\marci\\OneDrive\\Pulpit\\Sortowanie przez scalanie\\Sortowanie przez scalanie\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{3BE61C13-3B2D-4BEF-B392-54CC7CDB3F5B}|Sortowanie przez scalanie.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3BE61C13-3B2D-4BEF-B392-54CC7CDB3F5B}|Sortowanie przez scalanie.vcxproj|C:\\Users\\marci\\OneDrive\\Pulpit\\Sortowanie przez scalanie\\Sortowanie przez scalanie\\MergeSorter.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{3BE61C13-3B2D-4BEF-B392-54CC7CDB3F5B}|Sortowanie przez scalanie.vcxproj|solutionrelative:MergeSorter.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
@@ -19,12 +26,38 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "test.cpp",
+              "DocumentMoniker": "C:\\Users\\marci\\OneDrive\\Pulpit\\Sortowanie przez scalanie\\Sortowanie przez scalanie(testy)\\test.cpp",
+              "RelativeDocumentMoniker": "..\\Sortowanie przez scalanie(testy)\\test.cpp",
+              "ToolTip": "C:\\Users\\marci\\OneDrive\\Pulpit\\Sortowanie przez scalanie\\Sortowanie przez scalanie(testy)\\test.cpp",
+              "RelativeToolTip": "..\\Sortowanie przez scalanie(testy)\\test.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-11-25T21:04:02.86Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "main.cpp",
+              "DocumentMoniker": "C:\\Users\\marci\\OneDrive\\Pulpit\\Sortowanie przez scalanie\\Sortowanie przez scalanie\\main.cpp",
+              "RelativeDocumentMoniker": "main.cpp",
+              "ToolTip": "C:\\Users\\marci\\OneDrive\\Pulpit\\Sortowanie przez scalanie\\Sortowanie przez scalanie\\main.cpp",
+              "RelativeToolTip": "main.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-11-25T20:17:34.982Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "MergeSorter.h",
               "DocumentMoniker": "C:\\Users\\marci\\OneDrive\\Pulpit\\Sortowanie przez scalanie\\Sortowanie przez scalanie\\MergeSorter.h",
               "RelativeDocumentMoniker": "MergeSorter.h",
               "ToolTip": "C:\\Users\\marci\\OneDrive\\Pulpit\\Sortowanie przez scalanie\\Sortowanie przez scalanie\\MergeSorter.h",
               "RelativeToolTip": "MergeSorter.h",
-              "ViewState": "AgIAAEMAAAAAAAAAAADwv2IAAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAADUAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-11-25T19:29:23.356Z",
               "EditorCaption": ""
